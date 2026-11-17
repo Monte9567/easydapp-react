@@ -26,8 +26,17 @@ import { useLocation, useParams } from 'react-router-dom';
 import { execute_code_by_comlink } from '../../packages/common/execute';
 import { LinkDappView } from '../../packages/dapp';
 import { ThemeBar } from '../components/theme';
+import * as yuku01 from '../examples-yuku/yuku01';
+import * as yuku02 from '../examples-yuku/yuku02';
+import * as yuku03 from '../examples-yuku/yuku03';
 import * as example01 from '../examples/example01';
 import * as example02 from '../examples/example02';
+import * as example03 from '../examples/example03';
+import * as example04 from '../examples/example04';
+import * as example05 from '../examples/example05';
+import * as example06 from '../examples/example06';
+import * as example07 from '../examples/example07';
+import * as example08 from '../examples/example08';
 
 const doExecuteByWasm = doExecuteByWasmFactory(execute_code);
 const doExecuteByWasmAndRemoteAndCached = doExecuteByWasmAndRemoteAndCachedFactory(execute_code, doExecuteByRemote);
@@ -239,6 +248,24 @@ export function MockCombinedPage() {
                         return [example01.name, example01.icon, example01.combined];
                     case 'example02':
                         return [example02.name, example02.icon, example02.combined];
+                    case 'example03':
+                        return [example03.name, example03.icon, example03.combined];
+                    case 'example04':
+                        return [example04.name, example04.icon, example04.combined];
+                    case 'example05':
+                        return [example05.name, example05.icon, example05.combined];
+                    case 'example06':
+                        return [example06.name, example06.icon, example06.combined];
+                    case 'example07':
+                        return [example07.name, example07.icon, example07.combined];
+                    case 'example08':
+                        return [example08.name, example08.icon, example08.combined];
+                    case 'yuku01':
+                        return [yuku01.name, yuku01.icon, yuku01.combined];
+                    case 'yuku02':
+                        return [yuku02.name, yuku02.icon, yuku02.combined];
+                    case 'yuku03':
+                        return [yuku03.name, yuku03.icon, yuku03.combined];
                 }
                 throw new Error(`wrong name: ${name}`);
             })(),

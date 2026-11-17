@@ -1,4 +1,6 @@
-# pnpm-lock.yaml
+examples/
+src/examples/
+src/examples-yuku/
 *.tsbuildinfo
 bundle/
 examples/easydapp-popup.umd.js

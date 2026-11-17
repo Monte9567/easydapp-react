@@ -3,8 +3,17 @@ import { NavLink } from 'react-router-dom';
 
 import reactLogo from '../assets/react.svg';
 import viteLogo from '../assets/vite.svg';
+import * as yuku01 from '../examples-yuku/yuku01';
+import * as yuku02 from '../examples-yuku/yuku02';
+import * as yuku03 from '../examples-yuku/yuku03';
 import * as example01 from '../examples/example01';
 import * as example02 from '../examples/example02';
+import * as example03 from '../examples/example03';
+import * as example04 from '../examples/example04';
+import * as example05 from '../examples/example05';
+import * as example06 from '../examples/example06';
+import * as example07 from '../examples/example07';
+import * as example08 from '../examples/example08';
 
 export function HomePage() {
     const [count, setCount] = useState(0);
@@ -12,6 +21,15 @@ export function HomePage() {
     const local = [
         ['example01', example01.name],
         ['example02', example02.name],
+        ['example03', example03.name],
+        ['example04', example04.name],
+        ['example05', example05.name],
+        ['example06', example06.name],
+        ['example07', example07.name],
+        ['example08', example08.name],
+        ['yuku01', yuku01.name],
+        ['yuku02', yuku02.name],
+        ['yuku03', yuku03.name],
     ];
 
     const [published, setPublished] = useState<{ id: number; info: { name: string }; anchor?: string }[]>([]);
